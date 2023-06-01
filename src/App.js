@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {  Outlet } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
+import { useGlobalContext } from "./Components/context";
+import Cart from "./Components/Cart";
+import LoginPage from "./Components/LoginPage";
+import RegsiterPage from "./Components/RegsiterPage";
+import AccountPage from "./Components/AccountPage";
+import Footer from "./Components/Footer";
+import Offcanvas from "./Components/Offcanvas";
 function App() {
+  const {isOutletOpen,isOffcanvasOpen, isCartOpen, isLoginOpen, isRegisterOpen, isAccountOpen} = useGlobalContext()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        isAccountOpen ? <AccountPage/> : 
+        <>
+        <Navbar/>
+          {
+            isOutletOpen ? <><Outlet/><Footer/></> : ""
+          }
+          {
+            isOffcanvasOpen ? <Offcanvas/> : ""
+          }
+          {
+            isCartOpen ? <Cart/> : ""
+          }
+          {
+            isLoginOpen ? <LoginPage/> : ""
+          }
+          {
+            isRegisterOpen ? <RegsiterPage/> : ""
+          }
+        </>
+      }
+
     </div>
   );
 }

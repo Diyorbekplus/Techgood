@@ -1,0 +1,154 @@
+.cart {
+    
+    &_inner {
+        width: 90%;
+        margin: auto;
+        .cart_header {
+            margin: 1rem auto;
+            background: steelblue;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h6 {
+                flex: 1;
+                text-align: center;
+                font-size: 2rem;
+            }
+    
+            button {
+                color: rgb(203, 17, 17);
+                background: none;
+                border: none;
+                font-size: 2.5rem;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .cart_header h6 {
+                font-size: 1.5rem;
+            }
+        }
+        .cart_body {
+            position: relative;
+            box-sizing: border-box;
+            overflow-x: auto;
+            .categories {
+                .categories-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: grid;
+                    grid-template-columns: repeat(6, minmax(12rem, 1fr));
+                    text-align: center;
+                    color: #333;
+                    li {
+                        padding: 1rem 0;
+                        font-size: 1.5rem;
+                        background: #dadada;
+                    }
+                    .product {
+                        grid-column: 1 / 3;
+                    }
+                }
+            }
+            .cart-list {
+                &-item {
+                    height: 150px;
+                    border-top: none;
+                    &:hover {
+                        div {
+                            background: lighten(steelblue, 45px);
+                        }
+                    }
+                    .inner {
+                        display: grid;
+                        grid-template-columns:  repeat(6, minmax(12rem, 1fr));
+                        text-align: center;
+                        height: 100%;
+                        div {
+                            display: flex;
+                            
+                            align-items: center;
+                            border-bottom: 1px solid #dadada;
+                        }
+                        .title {
+                            grid-column: 1 / 3;
+                            p {
+                                margin-left: 1rem;
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                            }
+                            img {
+                                border: 1px solid #dadada;
+                                width: 130px;
+                                height: 120px;
+                                padding: 0.2rem;
+                                margin-left: 1rem;
+                            }
+            
+                        }
+                        .price {
+                            justify-content: center;
+                            color: #999;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                        }
+                        .quantity {
+                            justify-content: center;
+                            &_control {
+                                border: 1px solid #999;
+                                padding: 0.5rem;
+                                span {
+                                    margin: auto 1rem;
+                                    
+                                }
+                                button {
+                                    background: none;
+                                    border: none;
+                                    color: #999;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .total{
+                            justify-content: center;
+                            color: #999;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                        }
+                        .remove {
+                            justify-content: center;
+                            button {
+                                background: none;
+                                border: none;
+                                color: #999;
+                                font-size: 1.7rem;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .cart_footer {
+            .subtotal {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                color: #333;
+                background: #dadada;
+                padding: 1rem 1rem 0.5rem 1rem;
+                margin: 0;
+                 p {
+                    font-size: 2rem;
+                 }
+            }
+
+        }
+
+    }
+
+}

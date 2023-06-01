@@ -1,0 +1,45 @@
+.features {
+    border: 1px solid #000;
+    margin: 3rem 0;
+        .inner {
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(25rem, 1fr));
+            .feature-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 0;
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                .icon {
+                    font-size: 3rem;
+                    color: chocolate;
+                    margin-right: 1rem;
+                    &:hover {
+                        transition: transform 1s;
+                        transform: rotateY(180deg);
+                    }
+                }
+                .label {
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                    text-align: left;
+                    line-height: 0.8rem;
+                    }
+                    p:nth-child(1) {
+                        color: #111;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                    p:nth-child(2) {
+                        color: #555;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
+                }
+        }
+        }
+
+}

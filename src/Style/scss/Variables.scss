@@ -1,0 +1,38 @@
+    .page {
+        background: #f4f4f4;
+        padding: 1rem;
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            font-size: 2rem;
+            color: #777;
+            border-radius:  1rem;
+            box-shadow: inset 3px 3px 14px #bebebe,
+            inset -12px -12px 10px #ffffff;
+            button {
+                display: none;
+                border: none;
+                background: none;
+                color: steelblue;
+            }
+            
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .page {
+            .header {
+                justify-content: space-between;
+                align-items: center;
+                h2 {
+                    flex: 1;
+                    text-align: center;
+                }
+                button {
+                    display: flex;
+                }
+            }
+        }
+    }

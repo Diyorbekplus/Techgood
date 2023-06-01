@@ -1,0 +1,321 @@
+.header .header-inner {
+  display: grid;
+  margin-top: 3rem;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.header .header-item {
+  background: steelblue;
+  text-align: center;
+  color: white;
+  border-radius: 1rem;
+}
+.header .carousel-section {
+  grid-column: 1/5;
+  grid-row: 1/5;
+}
+.header .iphone_x {
+  position: relative;
+  grid-column: 5/6;
+  grid-row: 1/5;
+  background: rgb(2, 101, 207);
+}
+.header .iphone_x img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.header .iphone_x .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .iphone_x .caption button {
+  background: steelblue;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+}
+.header .iphone_x .caption button .link {
+  text-decoration: none;
+  color: #000;
+}
+.header .iphone_x:hover .caption {
+  display: block;
+}
+.header .smart-tv-section {
+  background: rgb(24, 140, 24);
+  position: relative;
+  grid-column: 6/-1;
+  grid-row: 1/3;
+}
+.header .smart-tv-section img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.header .smart-tv-section .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .smart-tv-section .caption button {
+  background: steelblue;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+}
+.header .smart-tv-section .caption button .link {
+  text-decoration: none;
+  color: #000;
+}
+.header .smart-tv-section:hover .caption {
+  display: block;
+}
+.header .laptop-section {
+  background: #bdbdbd;
+  position: relative;
+  grid-column: 1/4;
+  grid-row: 5/-1;
+  overflow: hidden;
+}
+.header .laptop-section img {
+  position: absolute;
+  width: 20rem;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+.header .laptop-section .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .laptop-section .caption button {
+  background: steelblue;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+}
+.header .laptop-section .caption button .link {
+  text-decoration: none;
+  color: #000;
+}
+.header .laptop-section:hover .caption {
+  display: block;
+}
+.header .phone-section {
+  background: #3c4242;
+  position: relative;
+  grid-column: 4/5;
+  grid-row: 5/-1;
+  overflow: hidden;
+}
+.header .phone-section img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5rem;
+  height: 8rem;
+  transform: translate(-50%, -50%);
+}
+.header .phone-section .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .phone-section .caption button {
+  background: steelblue;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+}
+.header .phone-section .caption button .link {
+  text-decoration: none;
+  color: #000;
+}
+.header .phone-section:hover .caption {
+  display: block;
+}
+.header .cheap_laptop_section {
+  background: #c28324;
+  position: relative;
+  grid-column: 5/6;
+  grid-row: 5/-1;
+}
+.header .cheap_laptop_section img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+.header .cheap_laptop_section .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .cheap_laptop_section .caption button {
+  background: steelblue;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+}
+.header .cheap_laptop_section .caption button .link {
+  text-decoration: none;
+  color: #000;
+}
+.header .cheap_laptop_section:hover .caption {
+  display: block;
+}
+.header .headphone {
+  background: rgb(219, 20, 20);
+  position: relative;
+  grid-column: 6/-1;
+  grid-row: 3/-1;
+}
+.header .headphone img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+.header .headphone .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .headphone .caption button {
+  background: steelblue;
+  color: #000;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+}
+.header .headphone .caption button .link {
+  text-decoration: none;
+  color: #000;
+}
+.header .headphone:hover .caption {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .header .header-inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .header .carousel-section {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+  }
+  .header .iphone_x {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+  }
+  .header .smart-tv-section {
+    display: none;
+  }
+  .header .laptop-section {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+  }
+  .header .phone-section {
+    display: none;
+  }
+  .header .cheap_laptop_section {
+    grid-column: 3/-1;
+    grid-row: 3/-1;
+  }
+  .header .headphone {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header .header-inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .header .carousel-section {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+  }
+  .header .iphone_x {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+  }
+  .header .smart-tv-section {
+    display: none;
+  }
+  .header .laptop-section {
+    display: none;
+  }
+  .header .phone-section {
+    display: none;
+  }
+  .header .cheap_laptop_section {
+    grid-column: 2/-1;
+    grid-row: 3/-1;
+  }
+  .header .headphone {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .header .header-inner {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .header .carousel-section {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+  }
+  .header .iphone_x {
+    display: none;
+  }
+  .header .smart-tv-section {
+    display: none;
+  }
+  .header .laptop-section {
+    display: none;
+  }
+  .header .phone-section {
+    display: none;
+  }
+  .header .cheap_laptop_section {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+  }
+  .header .cheap_laptop_section img {
+    width: 15rem;
+  }
+  .header .headphone {
+    display: none;
+  }
+}

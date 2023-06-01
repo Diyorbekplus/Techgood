@@ -1,0 +1,80 @@
+.offcanvas_navbar {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .offcanvas_navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .offcanvas_navbar .navbar_header {
+    width: 100%;
+    background: steelblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .offcanvas_navbar .navbar_header .user_icon {
+    text-align: center;
+    background: none;
+    font-size: 2rem;
+  }
+  .offcanvas_navbar .navbar_header .user_icon p {
+    font-size: 1.3rem;
+  }
+  .offcanvas_navbar .navbar_header .close_navbar {
+    position: absolute;
+    right: 1rem;
+    color: #000000;
+  }
+  .offcanvas_navbar .navbar_header .close_navbar span {
+    font-size: 3rem;
+  }
+  .offcanvas_navbar .carts_wishlist_compares {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
+  }
+  .offcanvas_navbar .carts_wishlist_compares .amounts {
+    background: none;
+    color: steelblue;
+    position: relative;
+    cursor: pointer;
+  }
+  .offcanvas_navbar .carts_wishlist_compares .amounts .icon {
+    background: none;
+    color: steelblue;
+    font-size: 2rem;
+  }
+  .offcanvas_navbar .carts_wishlist_compares .amounts .icon span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .offcanvas_navbar .carts_wishlist_compares .amounts .badge {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .offcanvas_navbar ul {
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+  .offcanvas_navbar ul li {
+    margin: 1rem 0;
+    position: relative;
+    font-size: 1.3rem;
+  }
+  .offcanvas_navbar ul li .link {
+    color: steelblue;
+    text-decoration: none;
+  }
+  .offcanvas_navbar ul li .link:hover {
+    color: #777;
+  }
+}

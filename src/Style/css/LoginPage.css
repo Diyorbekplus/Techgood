@@ -1,0 +1,75 @@
+.login_page {
+  overflow: hidden;
+}
+.login_page_inner {
+  margin: auto 2rem;
+  overflow: hidden;
+}
+.login_page_inner .login_page_header {
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100px;
+  background: steelblue;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_page_inner .login_page_header button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  font-size: 2rem;
+  color: rgb(218, 35, 35);
+  background: none;
+  border: none;
+}
+.login_page_inner .login_page_body {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.login_page_inner .login_page_body .login {
+  display: flex;
+  flex-direction: column;
+}
+.login_page_inner .login_page_body .login .title {
+  margin-bottom: 2rem;
+}
+.login_page_inner .login_page_body .login a {
+  margin: 2rem 0;
+  color: steelblue;
+  font-size: 1.1rem;
+}
+.login_page_inner .login_page_body .login button {
+  background: steelblue;
+  border: none;
+  outline: none;
+  padding: 0.2rem 0;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+.login_page_inner .login_page_body .login button:hover {
+  transform: scale(1.03);
+}
+.login_page_inner .login_page_body .register .title {
+  margin-bottom: 2rem;
+}
+.login_page_inner .login_page_body .register .text {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  color: #999;
+}
+.login_page_inner .login_page_body .register button {
+  background: steelblue;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.2rem 2rem;
+}
+.login_page_inner .login_page_body .register button:hover {
+  transform: scale(1.03);
+}
