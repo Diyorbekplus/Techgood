@@ -1,4 +1,4 @@
-import React, {  useContext, useEffect, useReducer, useState } from 'react'
+import React, {  useContext, useEffect, useReducer } from 'react'
 import { gamerProducts,laptops, laptopscategories, mobiles, mobilescategories, tvs, tvcategories, headphones, headphonescategories } from '../data'
 import reducer from './reducer'
 const AppContext = React.createContext()

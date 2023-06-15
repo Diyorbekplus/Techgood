@@ -47,7 +47,7 @@ const Mobiles = () => {
                 showCategoriesSection ? 
                 <div className='small_categories'>
                 <div className="head">
-                        <h2>Laptops Categories</h2>
+                        <h2>Mobiles Categories</h2>
                         <button className='close_btn' onClick={hideCategories}><span><HiOutlineXMark/></span></button>
                 </div>
                 <div className="body">

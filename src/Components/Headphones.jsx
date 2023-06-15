@@ -27,7 +27,7 @@ const Headphones = () => {
     <div className='products'>
             <div className='categories'>
             <div className="head">
-                    <h2>Mobiles Categories</h2>
+                    <h2>Headphones Categories</h2>
             </div>
             <div className="body">
                 <ul className='product_categories'>
@@ -47,7 +47,7 @@ const Headphones = () => {
                 showCategoriesSection ? 
                 <div className='small_categories'>
                 <div className="head">
-                        <h2>Laptops Categories</h2>
+                        <h2>Headphones</h2>
                         <button className='close_btn' onClick={hideCategories}><span><HiOutlineXMark/></span></button>
                 </div>
                 <div className="body">

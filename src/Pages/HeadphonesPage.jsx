@@ -8,7 +8,7 @@ const HeadphonesPage = () => {
   return (
     <div className='headphones page'>
         <div className="header alert">
-         <h2>Televisions</h2>
+         <h2>Headphones</h2>
          <button className='close_btn' onClick={showCategories}><span><RiBarChartHorizontalLine/></span></button>
         </div>
         <Headphones/>
