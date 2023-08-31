@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import "../Style/css/Offcanvas.css"
 import { Link } from 'react-router-dom';
-import {  HiOutlineXMark } from "react-icons/hi2";
 import { MdHomeRepairService, MdLaptopMac} from "react-icons/md";
 import { ImMobile } from "react-icons/im";
-import { FaTv, FaHeadphonesAlt, FaUserAlt } from "react-icons/fa";
+import { FaTv, FaHeadphonesAlt} from "react-icons/fa";
 import { HiShoppingCart} from "react-icons/hi";
 import { FiHeart, FiRefreshCcw } from "react-icons/fi";
 import { useGlobalContext } from './context';
 const Offcanvas = () => {
-  const { likes,closeOffcanvas, compares, openCart,toggleOffcanvas, amount, isRegisterOpen} = useGlobalContext()
+  const { likes, compares, openCart,toggleOffcanvas, amount, isRegisterOpen} = useGlobalContext()
 let data = localStorage.getItem("NewUser");
 const getNewName = () => {
   if(data) {
@@ -18,19 +17,12 @@ const getNewName = () => {
     return {}
   }
 }
-  const [info, setInfo] = useState(getNewName())
+  const [setInfo] = useState(getNewName())
   useEffect(() => {
     setInfo(getNewName())
   }, [isRegisterOpen])
   return (
     <div className='offcanvas_navbar'>
-{/*     <div className="navbar_header">
-     <div className="user_icon">
-    <span onClick={data ? openAccountPage :  openLoginPage}><FaUserAlt/></span>
-    <p className='name'>{info.firstName}</p> 
-     </div>
-    <button className='btn close_navbar' onClick={closeOffcanvas}><span><HiOutlineXMark className='toggle_icon'/></span></button>
-    </div> */}
     <section className='carts_wishlist_compares'>
     <div className='checkout amounts' onClick={openCart}>
     <div className="icon">
